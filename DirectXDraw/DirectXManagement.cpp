@@ -296,6 +296,7 @@ int DirectXDraw9::InitD3D( int create )
 	D3DPP.BackBufferHeight = GetScreenHeight();
 	// マルチサンプル時にぼやけないようにする。
 	D3DPP.MultiSampleType = D3DMULTISAMPLE_NONE;
+	D3DPP.MultiSampleQuality = 0;
 	//  D3DPP.BackBufferFormat = d3ddm.Format;
 	//  GetClientRect( GetWindowHandle(), &rect );
 	//  D3DPP.BackBufferWidth = rect.right;
