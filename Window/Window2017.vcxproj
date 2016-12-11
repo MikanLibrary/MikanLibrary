@@ -124,24 +124,44 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)$(Configuration)_2017\</OutDir>
-    <IntDir>$(Configuration)_2017\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
     <TargetName>WindowD</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DevDebug|Win32'">
-    <OutDir>$(SolutionDir)$(Configuration)_2017\</OutDir>
-    <IntDir>$(Configuration)_2017\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
     <TargetName>WindowD</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)$(Configuration)_2017\</OutDir>
-    <IntDir>$(Configuration)_2017\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
     <TargetName>Window</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DevRelease|Win32'">
-    <OutDir>$(SolutionDir)$(Configuration)_2017\</OutDir>
-    <IntDir>$(Configuration)_2017\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
     <TargetName>Window</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
+    <TargetName>Window</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DevRelease|x64'">
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
+    <TargetName>Window</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DevDebug|x64'">
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
+    <TargetName>WindowD</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
+    <TargetName>WindowD</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

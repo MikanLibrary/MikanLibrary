@@ -113,48 +113,60 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DevDebug|Win32'">
-    <OutDir>$(SolutionDir)$(Configuration)_2017\</OutDir>
-    <IntDir>$(Configuration)_2017\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
     <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
     <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
     <TargetName>DirectXInputD</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)$(Configuration)_2017\</OutDir>
-    <IntDir>$(Configuration)_2017\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
     <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
     <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
     <TargetName>DirectXInputD</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)$(Configuration)_2017\</OutDir>
-    <IntDir>$(Configuration)_2017\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
     <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
     <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
     <TargetName>DirectXInput</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DevRelease|Win32'">
-    <OutDir>$(SolutionDir)$(Configuration)_2017\</OutDir>
-    <IntDir>$(Configuration)_2017\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
     <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
     <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
     <TargetName>DirectXInput</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DevDebug|x64'">
     <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x64;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
+    <TargetName>DirectXInputD</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x64;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
+    <TargetName>DirectXInputD</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x64;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
+    <TargetName>DirectXInput</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DevRelease|x64'">
     <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x64;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
+    <TargetName>DirectXInput</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

@@ -124,24 +124,44 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)$(Configuration)_2017\</OutDir>
-    <IntDir>$(Configuration)_2017\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
     <TargetName>MikanNetworkD</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DevDebug|Win32'">
-    <OutDir>$(SolutionDir)$(Configuration)_2017\</OutDir>
-    <IntDir>$(Configuration)_2017\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
     <TargetName>MikanNetworkD</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)$(Configuration)_2017\</OutDir>
-    <IntDir>$(Configuration)_2017\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
     <TargetName>MikanNetwork</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DevRelease|Win32'">
-    <OutDir>$(SolutionDir)$(Configuration)_2017\</OutDir>
-    <IntDir>$(Configuration)_2017\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
     <TargetName>MikanNetwork</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
+    <TargetName>MikanNetwork</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DevRelease|x64'">
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
+    <TargetName>MikanNetwork</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DevDebug|x64'">
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
+    <TargetName>MikanNetworkD</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Configuration)_2017_$(Platform)\</OutDir>
+    <IntDir>$(Configuration)_2017_$(Platform)\</IntDir>
+    <TargetName>MikanNetworkD</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -182,7 +202,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_MIKANDEVELOPER;_UNLOADLIBRARY;_UNLINK_LIBRARY;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
@@ -197,7 +217,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_MIKANDEVELOPER;_UNLOADLIBRARY;_UNLINK_LIBRARY;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
@@ -255,7 +275,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_MIKANDEVELOPER;_UNLOADLIBRARY;_UNLINK_LIBRARY;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
@@ -274,7 +294,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_MIKANDEVELOPER;_UNLOADLIBRARY;_UNLINK_LIBRARY;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
